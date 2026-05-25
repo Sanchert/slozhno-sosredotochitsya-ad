@@ -4,11 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
     <title>Сложно сосредоточиться</title>
-    <script src="./scripts/script.js"></script>
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/dark.css" />
+    <link rel="stylesheet" href="./styles/light.css" />
   </head>
   <body class="page">
     <header class="header decorated-zone">
+      <div class="rec" aria-hidden="true">REC</div>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -35,6 +43,78 @@
           </li>
         </ul>
       </nav>
+      <h1 class="header__title">no focus</h1>
+      <div class="header__description">
+        <p class="title-decor">Что делать, когда не можешь делать ничего<br>Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
+      </div>
     </header>
+
+    <main class="content">
+      <section class="section section__why">
+        <h2 class="section__title">Почему сосредоточиться так сложно</h2>
+        <div class="section__content">
+          <article class="card">
+            <h3 class="card__title title-decor">Многозадачность</h3>
+            <p class="card__text">Особенно сложно сосредоточиться, когда задач много и все они — важные. Где же легендарная многозадачность, когда она так нужна вам (и всем нанимающим специалистам)? Исследователи выяснили, что мозгу тяжело концентрироваться даже на двух делах одновременно. А если в список дел добавить сразу несколько, то организм попросту срывается на перекур.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Дофамин</h3>
+            <p class="card__text">С дофамином всё интереснее. Его, наоборот, может быть слишком много. Он отвечает за удовлетворение потребностей, но при этом даёт временное наслаждение. Именно он заставляет нас искать более лёгкий и приятный путь: смотреть TikTok, листать соцсети или покупать вкусняшки. А надо — работать!</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section__what">
+        <h2 class="section__title">Что снижает концентрацию внимания?</h2>
+        <div class="section__content section__content_grid">
+          <article class="card">
+            <h3 class="card__title title-decor">Многозадачность</h3>
+            <p class="card__text">Как реагирует мозт на необходимость делать сразу несколько дел? Исследователи выяснили, что концентрация падает. А постоянные переключения между задачами могут привести к стрессу и снижению продуктивности.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Дофамин</h3>
+            <p class="card__text">Гормон удовольствия. Как он связан с концентрацией? Всё просто: когда мы делаем скучную работу, дофамина вырабатывается мало. Мозг ищет лёгкие пути и быстрый дофамин — соцсети, видеоролики, вкусная еда.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Эффект Позитива</h3>
+            <p class="card__text">Мы склонны переоценивать свои способности. Кажется, что мы всё успеем и ничего не отвлечёт. Но реальность часто оказывается суровее, и планы срываются.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section__how">
+        <h2 class="section__title">Как концентрироваться лучше, чем все ваши конкуренты (правда, рабочая тактика)</h2>
+        <div class="section__content">
+          <article class="card">
+            <h3 class="card__title title-decor">1. Добавьте физическую активность</h3>
+            <p class="card__text">Физическая активность помогает мозгу вырабатывать важные нейромедиаторы и улучшает кровообращение. Даже короткая прогулка может повысить концентрацию.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">2. Практикуйте осознанность</h3>
+            <p class="card__text">Медитации и дыхательные упражнения помогают тренировать внимание. Всего 10 минут в день могут дать заметный эффект.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">3. Управляйте дофамином</h3>
+            <p class="card__text">Поощряйте себя за выполненную работу, но выбирайте полезные награды: прогулку, вкусный чай, любимую музыку. Так мозг привыкнет получать дофамин за продуктивные действия.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <h2 class="gallery__title title-decor">А что, если я ничего не захочу делать?</h2>
+        <div class="gallery__grid">
+          <img src="./images/sunset.png" alt="Закат с летающими птицами" class="gallery__image" loading="lazy" />
+          <img src="./images/ice-cream.png" alt="Мороженое с разными вкусами" class="gallery__image" loading="lazy" />
+          <img src="./images/tape.png" alt="Аудиокассета и дискета на столе" class="gallery__image" loading="lazy" />
+          <img src="./images/books.png" alt="Стопка книг с кружкой наверху" class="gallery__image" loading="lazy" />
+          <img src="./images/street.png" alt="Городская улица в японском стиле" class="gallery__image" loading="lazy" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer decorated-zone">
+      <h2 class="footer__title">focus</h2>
+    </footer>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
