@@ -1,7 +1,11 @@
 .page {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   padding: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
@@ -43,12 +47,13 @@
   position: absolute;
   top: 10px;
   right: 28px;
-  display: var(--rec-display, none);
+  display: var(--rec-display);
   align-items: center;
   gap: 10px;
   color: var(--accent-color);
+  font-family: inherit;
+  font-size: 18px;
   text-transform: uppercase;
-  font-weight: 400;
 }
 
 .rec::after {
@@ -77,8 +82,9 @@
   background: transparent;
   border: none;
   color: var(--accent-color);
-  text-transform: lowercase;
+  font-family: inherit;
   font-size: 18px;
+  text-transform: lowercase;
   cursor: pointer;
 }
 
@@ -97,12 +103,12 @@
 }
 
 .header__title {
+  margin-block: 40px 0;
   font-size: var(--title-font-size-mobile);
   font-weight: 700;
+  line-height: 0.825;
   color: var(--title-color);
   text-shadow: 4px 4px 0 var(--title-shadow);
-  line-height: 0.825;
-  margin-block: 40px 0;
 }
 
 .header__description {
@@ -157,16 +163,16 @@
   line-height: 23.4px;
 }
 
-.content a {
+a {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--link-shadow);
 }
 
-.content a:hover {
+a:hover {
   text-decoration: underline;
 }
 
-.content a:focus-visible {
+a:focus-visible {
   outline: 1px solid var(--text-color);
   outline-offset: 2px;
 }
@@ -210,6 +216,7 @@
   text-shadow: 2px 2px 0 var(--title-shadow);
 }
 
+/* ========== ПЛАНШЕТ (768px) ========== */
 @media (min-width: 768px) {
   .page {
     padding: 20px;
@@ -236,9 +243,9 @@
   }
 
   .header__title {
-    font-size: var(--title-font-size-desktop);
     margin-inline-start: -20px;
     margin-block: 80px 0;
+    font-size: var(--title-font-size-desktop);
   }
 
   .header__description {
@@ -305,6 +312,7 @@
   }
 }
 
+/* ========== ДЕСКТОП (1024px) ========== */
 @media (min-width: 1024px) {
   .header {
     min-height: 768px;
@@ -327,10 +335,6 @@
 
   .section {
     gap: 40px;
-  }
-
-  .section__what .section__content_grid {
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .footer {

@@ -7,7 +7,6 @@
   --title-shadow: #ff0070;
   --button-hover-color: rgba(255, 0, 112, 0.4);
   --link-shadow: #ff0070;
-
   --rec-display: flex;
 
   --title-font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
